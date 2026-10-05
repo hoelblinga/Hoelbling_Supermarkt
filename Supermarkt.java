@@ -22,4 +22,15 @@ public class Supermarkt
     public boolean getParkplatz(){
         return parkplatz;
     }
+    
+    
+    public void setName(String name){
+        this.name=name;
+    }
+    public void setKassen(int kassen){
+        this.kassen=kassen;
+    }
+    public void setParkplatz(boolean parkplatz){
+        this.parkplatz=parkplatz;
+    }
 }
