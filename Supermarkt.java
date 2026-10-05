@@ -13,6 +13,18 @@ public class Supermarkt
     private boolean parkplatz;
     
     
+    public Supermarkt(){
+        setName("UNKN");
+        setKassen(0);
+        setParkplatz(false);
+    }
+    
+    public Supermarkt(String name, int kassen, boolean parkplatz){
+        setName(name);
+        setKassen(kassen);
+        setParkplatz(parkplatz);
+    }
+    
     public String getName(){
         return name;
     }
