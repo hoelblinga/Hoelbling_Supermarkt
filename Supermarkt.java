@@ -45,4 +45,8 @@ public class Supermarkt
     public void setParkplatz(boolean parkplatz){
         this.parkplatz=parkplatz;
     }
+    
+    public void printSupermarkt(){
+        System.out.println("Supermarktname: "+name+", Kassen: "+kassen+", Parkplaetze: "+parkplatz);
+    }
 }
