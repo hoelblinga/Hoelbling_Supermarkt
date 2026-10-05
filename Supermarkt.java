@@ -7,4 +7,19 @@
  */
 public class Supermarkt
 {
+    
+    private String name;               
+    private int kassen;
+    private boolean parkplatz;
+    
+    
+    public String getName(){
+        return name;
+    }
+    public int getKassen(){
+        return kassen;
+    }
+    public boolean getParkplatz(){
+        return parkplatz;
+    }
 }
