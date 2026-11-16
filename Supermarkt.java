@@ -25,6 +25,16 @@ public class Supermarkt
         setParkplatz(parkplatz);
     }
     
+    public String getStadt(){
+        int pos = name.indexOf("-");
+        return name.substring(0, pos);
+    }
+    
+    public String getSupermarktName(){
+        int pos = name.indexOf("-");
+        return name.substring(pos+1, name.length());
+    }
+    
     public String getName(){
         return name;
     }
@@ -39,9 +49,16 @@ public class Supermarkt
     public void setName(String name){
         this.name=name;
     }
+    
     public void setKassen(int kassen){
-        this.kassen=kassen;
+        if(kassen>=1&&kassen<=100){
+            this.kassen=kassen;
+        } else {
+            System.out.print("Kassen müssen zwischen 0 und 100 sein.");
+            this.kassen=1;
+        }
     }
+    
     public void setParkplatz(boolean parkplatz){
         this.parkplatz=parkplatz;
     }
